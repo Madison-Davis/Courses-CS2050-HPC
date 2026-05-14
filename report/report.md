@@ -1,8 +1,3 @@
-# Report Instructions
-Write a blog-style report summarizing your project. It should include an introduction to your algorithm, as well as methods, results, and conclusion sections. Explain your parallelization strategies and key performance results, including figures to showcase scaling (both strong and weak scaling) and further explain your ideas. Use at least one profiling tool (VTune for CPU, Nsight Systems or Nsight Compute for GPU) to identify bottlenecks or explain observed performance trends.  We expect roughly 2500 words, but the exact word count is much less important than overall quality.
-
-NOTE: not counting tables or charts, the word count is around 3000 words.  I tried to keep it succinct yet with good-in-depth analysis.
-
 # Algorithm Overview and Main Methods
 This project simulates an N-body spatial orbital collision environment.  There is one main planetary body and N-bodies orbiting it.  The algorithmic simulation involves three main methods:
 - `compute_acceleration`: for each body (both for the planet and the N bodies), update its new acceleration using the formula `a' = a + r * F` where `a` stands for acceleration, `r` for position, and `F` for Newton's Law of Universal Gravitation.
