@@ -1,0 +1,14 @@
+Compiling test...
+Compilation successful
+Running with 1 thread (baseline)
+[SUCCESS] Acceleration match
+[SUCCESS] Collisions match
+[SUCCESS] Integration match
+[SUCCESS] All tests passed
+Running with 16 threads
+[SUCCESS] Acceleration match
+[SUCCESS] Collisions match
+[SUCCESS] Integration match
+[SUCCESS] All tests passed
+
+All tests completed

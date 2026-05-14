@@ -1,0 +1,2 @@
+Program,Threads,N_Bodies,Time(s)
+openmp,2,2000,0.93

@@ -1,0 +1,3 @@
+233 [23397511333440] INFO mrtehelpers.mrteenv <> - Product libs directory: /shared/courseSharedFolders/161588outer/161588/spack/opt/spack/linux-cascadelake/intel-oneapi-vtune-2024.3.0-nxjs3mkapv2jrlqk3tfkxwxux7lahqwg/vtune/2024.3/lib64
+233 [23397511333440] INFO mrtehelpers.mrteenv <> - File mask: amplxe_samplingmrte_clrprof*
+350 [23397511333440] INFO mrtehelpers.mrteenv <> - File name: libamplxe_samplingmrte_clrprof_1.0.so

@@ -1,0 +1,14 @@
+Compiling test...
+Compilation successful
+Running with 1 process (baseline)
+[SUCCESS] Acceleration match
+[SUCCESS] Collisions match
+[SUCCESS] Integration match
+[SUCCESS] All MPI tests passed
+Running with 16 processes
+[SUCCESS] Acceleration match
+[SUCCESS] Collisions match
+[SUCCESS] Integration match
+[SUCCESS] All MPI tests passed
+
+All tests completed

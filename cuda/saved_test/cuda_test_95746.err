@@ -1,0 +1,3 @@
+[1;93m==>[0m Warning: could not unload runtime environment due to ProcessError: Command exited with status -4:
+    '/shared/courseSharedFolders/161588outer/161588/spack/opt/spack/linux-cascadelake/python-venv-1.0-k6bxidk3j2at6aol26xf6ckgvul2iwfa/bin/python3' '-Ec' 'import sysconfig; print(sysconfig.get_path('"'"'platlib'"'"'))'
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).

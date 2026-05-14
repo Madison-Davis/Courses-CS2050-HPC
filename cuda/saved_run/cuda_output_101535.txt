@@ -1,0 +1,72 @@
+NVIDIA-SMI snapshot before run:
+Wed Apr 29 13:56:28 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.172.08             Driver Version: 570.172.08     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L4                      On  |   00000000:38:00.0 Off |                    0 |
+| N/A   32C    P8             16W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA L4                      On  |   00000000:3A:00.0 Off |                    0 |
+| N/A   31C    P8             15W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA L4                      On  |   00000000:3C:00.0 Off |                    0 |
+| N/A   75C    P0             36W /   72W |    9204MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA L4                      On  |   00000000:3E:00.0 Off |                    0 |
+| N/A   31C    P8             16W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    2   N/A  N/A          834133      C   ...163602/cs1090b-gpu/bin/python       9196MiB |
++-----------------------------------------------------------------------------------------+
+Running body-count scaling to produce timing csv files
+  Recompiling with NUM_BODIES=128 ...
+  [Config.h] NUM_BODIES set to 128
+  Running: N=128 => cuda_timing_scale_128.csv
+  Recompiling with NUM_BODIES=256 ...
+  [Config.h] NUM_BODIES set to 256
+  Running: N=256 => cuda_timing_scale_256.csv
+  Recompiling with NUM_BODIES=512 ...
+  [Config.h] NUM_BODIES set to 512
+  Running: N=512 => cuda_timing_scale_512.csv
+  Recompiling with NUM_BODIES=1024 ...
+  [Config.h] NUM_BODIES set to 1024
+  Running: N=1024 => cuda_timing_scale_1024.csv
+  Recompiling with NUM_BODIES=2048 ...
+  [Config.h] NUM_BODIES set to 2048
+  Running: N=2048 => cuda_timing_scale_2048.csv
+  Recompiling with NUM_BODIES=4096 ...
+  [Config.h] NUM_BODIES set to 4096
+  Running: N=4096 => cuda_timing_scale_4096.csv
+  Recompiling with NUM_BODIES=5000 ...
+  [Config.h] NUM_BODIES set to 5000
+  Running: N=5000 => cuda_timing_scale_5000.csv
+  Recompiling with NUM_BODIES=8192 ...
+  [Config.h] NUM_BODIES set to 8192
+  Running: N=8192 => cuda_timing_scale_8192.csv
+  Recompiling with NUM_BODIES=16384 ...
+  [Config.h] NUM_BODIES set to 16384
+  Running: N=16384 => cuda_timing_scale_16384.csv
+  Recompiling with NUM_BODIES=32768 ...
+  [Config.h] NUM_BODIES set to 32768
+  Running: N=32768 => cuda_timing_scale_32768.csv
+  Recompiling with NUM_BODIES=65536 ...
+  [Config.h] NUM_BODIES set to 65536
+  Running: N=65536 => cuda_timing_scale_65536.csv
+  Recompiling with NUM_BODIES=131072 ...
+  [Config.h] NUM_BODIES set to 131072
+  Running: N=131072 => cuda_timing_scale_131072.csv
+  [Config.h] NUM_BODIES set to 5000
+All jobs completed. Timing CSVs saved per body count.

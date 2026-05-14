@@ -1,0 +1,9 @@
+Compiling...
+  NUM_BODIES = 5000
+Running strong scaling...
+  Running: 1 threads, N=5000
+  Running: 2 threads, N=5000
+  Running: 4 threads, N=5000
+  Running: 8 threads, N=5000
+  Running: 16 threads, N=5000
+Done.

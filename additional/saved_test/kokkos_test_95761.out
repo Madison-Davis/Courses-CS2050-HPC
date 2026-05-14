@@ -1,0 +1,10 @@
+Compiling test...
+Compilation successful
+Running Kokkos test with 16 threads...
+[SUCCESS] Acceleration match
+[SUCCESS] Collisions match
+[SUCCESS] Integration match
+
+[SUCCESS] All tests passed
+
+All tests completed
