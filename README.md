@@ -112,3 +112,4 @@ https://code.harvard.edu/CS-2050/project-wcw398/tree/d0c2bd4594a3dc23b9ce1958f00
 You do **not** need to match pages when uploading this to Gradescope if prompted.
 # Courses-CS2050-HPC
 # Courses-CS2050-HPC
+# Courses-CS2050-HPC
