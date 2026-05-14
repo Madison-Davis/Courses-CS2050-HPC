@@ -1,3 +1,4 @@
+
 # CS 2050 Final Project
 # Report Instructions
 Write a blog-style report summarizing your project. It should include an introduction to your algorithm, as well as methods, results, and conclusion sections. Explain your parallelization strategies and key performance results, including figures to showcase scaling (both strong and weak scaling) and further explain your ideas. Use at least one profiling tool (VTune for CPU, Nsight Systems or Nsight Compute for GPU) to identify bottlenecks or explain observed performance trends.  We expect roughly 2500 words, but the exact word count is much less important than overall quality.
@@ -12,9 +13,8 @@ This project simulates an N-body spatial orbital collision environment.  There i
 
 
 Here is a visualization video, generated from this project's serial position data: <br>
-https://drive.google.com/file/d/16-vuKYKwVXuKJTtXasCnfYbgfgpHIbKw/view?usp=sharing
-
-<img width="1621" alt="Screenshot 2026-04-26 at 3 30 16 PM" src="https://code.harvard.edu/CS-2050/project-mad7915/assets/5880/65240285-5907-466b-b022-eaad35c4deed">
+https://github.com/user-attachments/assets/f4dc0c54-b97b-496a-b606-7aca4eabb7cd
+<img width="1623" height="1003" alt="Screenshot 2026-05-14 at 9 51 22 AM" src="https://github.com/user-attachments/assets/64c46a53-6dea-4204-8f71-a00817ef00a3" />
 
 
 # Parallelization Strategies
@@ -98,16 +98,16 @@ The OpenMP and MPI strong and weak scaling results are as follows.  Note the fol
 
 | Strong Scaling: OpenMP |
 |------------------|
-| <img width="800" alt="Screenshot 2026-04-20 at 8 13 55 PM" src="https://code.harvard.edu/CS-2050/project-mad7915/assets/5880/9e41dea0-da0c-4f96-b350-1ce8556e1af8"> |
+| <img width="804" height="339" alt="Screenshot 2026-05-14 at 9 53 09 AM" src="https://github.com/user-attachments/assets/92af6ce0-9293-4531-8d94-802bf3e5130a" /> |
 
 | Strong Scaling: MPI |
 |------------------|
-| <img width="884" alt="Screenshot 2026-04-30 at 9 00 36 PM" src="https://code.harvard.edu/CS-2050/project-mad7915/assets/5880/5740d454-5f37-4855-9251-1163bfaf3ede"> | <br>
+| <img width="889" height="376" alt="Screenshot 2026-05-14 at 9 53 16 AM" src="https://github.com/user-attachments/assets/83ac207f-9479-477c-907e-581e12e06ae5" /> | <br>
 
 
 | Weak Scaling: OpenMP | Weak Scaling: MPI |
 |------------------|------------------|
-| <img width="487" alt="Screenshot 2026-04-20 at 8 14 04 PM" src="https://code.harvard.edu/CS-2050/project-mad7915/assets/5880/91c1c72d-b7c6-4c74-8d78-1236efae0db6"> | <img width="504" alt="Screenshot 2026-04-30 at 9 00 42 PM" src="https://code.harvard.edu/CS-2050/project-mad7915/assets/5880/89c85b44-cd07-41e3-96f9-efe1539b4026"> | <br>
+| <img width="472" height="346" alt="Screenshot 2026-05-14 at 9 53 22 AM" src="https://github.com/user-attachments/assets/49ee1305-f934-4402-8e3a-ef3ff9bf989b" /> | <img width="490" height="352" alt="Screenshot 2026-05-14 at 9 53 28 AM" src="https://github.com/user-attachments/assets/efb2a6cc-6f89-4c44-b4aa-b0e59c357a42" /> | <br>
 
 
 My analysis is as follows:
@@ -123,7 +123,7 @@ The final analysis relates to CUDA Scaling.  The premise is this: some GPU workl
 
 | Scaling: CUDA |
 |----------------|
-| <img width="685" alt="Screenshot 2026-04-29 at 10 47 28 AM" src="https://code.harvard.edu/CS-2050/project-mad7915/assets/5880/d0c61498-6f26-4792-b909-5fb3987cce10"> |
+| <img width="691" height="381" alt="Screenshot 2026-05-14 at 9 53 35 AM" src="https://github.com/user-attachments/assets/be385135-c75d-4903-b09d-1e094d2acb8f" /> |
 
 My conclusions are as follows:
 - N=5000 is within the sub-linear zone.  The GPU is filling up, but parallelism partially absorbs extra work.
