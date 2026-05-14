@@ -1,2 +1,2 @@
 # CS 2050 Final Project
-Review `report/README.md` for full analysis.
+Review `report/report.md` for full analysis.
