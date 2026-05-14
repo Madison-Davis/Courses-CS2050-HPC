@@ -1,16 +1,10 @@
 
 # CS 2050 Final Project
-# Report Instructions
-Write a blog-style report summarizing your project. It should include an introduction to your algorithm, as well as methods, results, and conclusion sections. Explain your parallelization strategies and key performance results, including figures to showcase scaling (both strong and weak scaling) and further explain your ideas. Use at least one profiling tool (VTune for CPU, Nsight Systems or Nsight Compute for GPU) to identify bottlenecks or explain observed performance trends.  We expect roughly 2500 words, but the exact word count is much less important than overall quality.
-
-NOTE: not counting tables or charts, the word count is around 3000 words.  I tried to keep it succinct yet with good-in-depth analysis.
-
 # Algorithm Overview and Main Methods
 This project simulates an N-body spatial orbital collision environment.  There is one main planetary body and N-bodies orbiting it.  The algorithmic simulation involves three main methods:
 - `compute_acceleration`: for each body (both for the planet and the N bodies), update its new acceleration using the formula `a' = a + r * F` where `a` stands for acceleration, `r` for position, and `F` for Newton's Law of Universal Gravitation.
 - `check_collisions`: for each of the N-bodies, I check for collisions.  First, if a body collides with the surface of the planet (by comparing the body's Euclidian length of its position with the planet's radius), we destroy the incoming body.  Second, if two bodies i and j collide with one another, they merge under a perfectly inelastic model: the new mass is m(i) + m(j); radius is v(i)^1/3 + v(j)^1/3, where v is volume; and velocity is m(i)v(i) * m(j)v(j).
 - `integrate`: for each of the N-bodies, I update its position and velocity values using Velocity Verlet integration equations.
-
 
 Here is a visualization video, generated from this project's serial position data: <br>
 https://github.com/user-attachments/assets/f4dc0c54-b97b-496a-b606-7aca4eabb7cd
